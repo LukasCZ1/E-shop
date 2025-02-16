@@ -5,7 +5,7 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    padding: 0;
+
 }
 .intro-container {
     display: flex;
@@ -38,13 +38,13 @@ body {
     font-weight: bold;
 }
 .btn-nav:hover{
-    background: #56716f;;
+    background: #56716f;
 }
 .cart{
     vertical-align: middle;
     cursor: pointer;
 }
-h2{
+.shopH2{
     font-size: 53px;
     margin-bottom: 0;
 }
@@ -102,4 +102,141 @@ p{
 .btn-buy:hover{
     background: var(--2);
     color: white;
+}
+
+
+.ebook-section {
+    display: flex;
+    align-items: center;
+    background-color: var(--1);
+    padding: 70px;
+    color: white;
+    justify-content: center;
+    gap: 10%;
+}
+.ebook h2{
+    display: flex;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+.ebook p{
+    font-size: 20px;
+    display: flex;
+    text-align: justify;
+}
+.ebook {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 40%;
+}
+
+.email {
+    display: flex;
+    gap: 10px;
+}
+
+.email input {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+}
+span{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    padding-left: 7px;
+}
+.email button {
+    background-color:  var(--2);
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.email button:hover{
+    background:  #56716f;
+}
+
+footer {
+    background-color: #293330;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.footer-container h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+.social-icons i {
+    color: var(--2);
+    font-size: 20px;
+    margin: 20px 5px;
+}
+.footer-links ul, .footer-services ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li a, .footer-services ul li a {
+    color: #d4af37;
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 20px;
+}
+.footer-links a:hover, .footer-services a:hover {
+    text-decoration: underline;
+    color: var(--2);
+    text-underline-offset: 4px;
+}
+.footer-newsletter input {
+    display: flex;
+    padding: 14px 25px;
+    width: 220px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 25px;
+}
+.footer-newsletter p{
+    margin: 3px;
+    font-size: 16px;
+}
+.footer-newsletter button {
+    background-color: #d4af37;
+    color: white;
+    font-size: 16px;
+    padding: 14px 25px;
+    width: 270px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.footer-newsletter button:hover{
+    background: #56716f;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 10px;
+    height: 100px;
+    align-items: center;
+}
+.footer-bottom p{
+    font-size: 12px;
+}
+.footer-bottom a {
+    color: #d4af37;
+    text-decoration: none;
 }
