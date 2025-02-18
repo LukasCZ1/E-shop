@@ -68,9 +68,10 @@ p{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    gap: 10%;
 }
 .product {
-    width: 27%;
+    width: 18%;
     text-align: center;
     margin: 0;
     font-weight: bold;
@@ -143,8 +144,9 @@ p{
     border: none;
     font-size: 20px;
 }
-span{
+.ebook a{
     text-decoration: underline;
+    color: white;
     text-underline-offset: 7px;
     padding-left: 7px;
 }
@@ -240,3 +242,77 @@ footer {
     color: #d4af37;
     text-decoration: none;
 }
+
+
+@media only screen and (max-width: 1055px){
+    body{
+        flex-wrap: wrap;
+    }
+    .intro-container{
+        width: 90%;
+    }
+    .shop p{
+        padding: 0 30px;
+    }
+    .product {
+        text-align: center;
+        width: 30%;
+    }
+    .ebook-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .ebook{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center
+    }
+    .ebook h2{
+        font-size: 28px;
+        width: 250px;
+    }
+    .ebook p{
+        font-size: 18px;
+        width: 500px;
+        justify-content: center;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+    .footer-links {
+        padding-right: 25%;
+    }
+    .footer-container h3 {
+        font-size: 22px;
+    }
+    .footer-links ul li a, .footer-services ul li a {
+        font-size: 18px;
+    }
+    .footer-logo{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 970px){
+    .intro-container{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 708px){
+    .product {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+}
+
+
