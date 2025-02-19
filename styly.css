@@ -144,6 +144,9 @@ p{
     border: none;
     font-size: 20px;
 }
+.email input:focus {
+    outline: none;
+}
 .ebook a{
     text-decoration: underline;
     color: white;
@@ -185,6 +188,7 @@ footer {
     color: var(--2);
     font-size: 20px;
     margin: 20px 5px;
+    cursor: pointer;
 }
 .footer-links ul, .footer-services ul {
     list-style: none;
@@ -196,6 +200,7 @@ footer {
     line-height: 35px;
     font-size: 20px;
 }
+
 .footer-links a:hover, .footer-services a:hover {
     text-decoration: underline;
     color: var(--2);
@@ -209,6 +214,9 @@ footer {
     border: none;
     font-size: 16px;
     border-radius: 25px;
+}
+.footer-newsletter input:focus {
+    outline: none;
 }
 .footer-newsletter p{
     margin: 3px;
@@ -239,22 +247,21 @@ footer {
 .footer-bottom p{
     font-size: 12px;
 }
-.footer-bottom a {
-    color: #d4af37;
-    text-decoration: none;
-}
 
 
 @media only screen and (max-width: 1055px){
     body{
         flex-wrap: wrap;
     }
+    .old-price{
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
     .intro-container{
         width: 90%;
     }
-    .shop p{
-        padding: 0 30px;
-    }
+
     .product {
         text-align: center;
         width: 30%;
@@ -286,6 +293,7 @@ footer {
         gap: 20px;
         padding: 20px;
     }
+
     .footer-container h3 {
         font-size: 22px;
     }
@@ -310,5 +318,7 @@ footer {
         flex-direction: column;
     }
 }
+
+
 
 
